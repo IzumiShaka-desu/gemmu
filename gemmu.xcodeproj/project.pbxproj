@@ -14,6 +14,7 @@
 		BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */; };
 		BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */; };
 		BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */; };
+		BAA3C1BE27B3B06B001F7B5B /* GamesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITests.swift; sourceTree = "<group>"; };
 		BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		BAA3C18F27B39C36001F7B5B /* gemmu */ = {
 			isa = PBXGroup;
 			children = (
+				BAA3C1BC27B3B055001F7B5B /* models */,
 				BAA3C19027B39C36001F7B5B /* gemmuApp.swift */,
 				BAA3C19227B39C36001F7B5B /* ContentView.swift */,
 				BAA3C19427B39C38001F7B5B /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */,
 			);
 			path = gemmuUITests;
+			sourceTree = "<group>";
+		};
+		BAA3C1BC27B3B055001F7B5B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */,
+				BAA3C1BE27B3B06B001F7B5B /* GamesResponse.swift in Sources */,
 				BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
