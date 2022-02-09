@@ -6,3 +6,45 @@
 //
 
 import Foundation
+struct GameItem: Codable {
+    let id: Int?
+    let slug, name, released: String?
+    let tba: Bool?
+    let backgroundImage: String?
+    let rating: Double?
+    let ratingTop: Int?
+    let ratings: [Rating]?
+    let ratingsCount, reviewsTextCount, added: Int?
+    let addedByStatus: AddedByStatus?
+    let metacritic, playtime, suggestionsCount: Int?
+    let updated: String?
+    let reviewsCount: Int?
+    let platforms: [PlatformElement]?
+    let parentPlatforms: [ParentPlatform]?
+    let genres: [Genre]?
+    let stores: [Store]?
+    let tags: [Genre]?
+    let esrbRating: EsrbRating?
+    let shortScreenshots: [ShortScreenshot]?
+
+    enum CodingKeys: String, CodingKey {
+        case id, slug, name, released, tba
+        case backgroundImage = "background_image"
+        case rating
+        case ratingTop = "rating_top"
+        case ratings
+        case ratingsCount = "ratings_count"
+        case reviewsTextCount = "reviews_text_count"
+        case added
+        case addedByStatus = "added_by_status"
+        case metacritic, playtime
+        case suggestionsCount = "suggestions_count"
+        case updated
+        case reviewsCount = "reviews_count"
+        case platforms
+        case parentPlatforms = "parent_platforms"
+        case genres, stores, tags
+        case esrbRating = "esrb_rating"
+        case shortScreenshots = "short_screenshots"
+    }
+}
