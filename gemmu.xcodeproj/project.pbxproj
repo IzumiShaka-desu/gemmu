@@ -14,7 +14,24 @@
 		BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */; };
 		BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */; };
 		BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */; };
-		BAA3C1BE27B3B06B001F7B5B /* GamesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */; };
+		BAA3C1C127B3B2B8001F7B5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1C027B3B2B7001F7B5B /* Constants.swift */; };
+		BAA3C1C527B3B9D4001F7B5B /* AboutPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */; };
+		BAA3C1C827B3B9FC001F7B5B /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = BAA3C1C727B3B9FC001F7B5B /* NetworkImage */; };
+		BAA3C1CD27B3BC98001F7B5B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BAA3C1CC27B3BC98001F7B5B /* Alamofire */; };
+		BAA3C1EB27B3C145001F7B5B /* GamesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1EA27B3C145001F7B5B /* GamesResponse.swift */; };
+		BAA3C1ED27B3C1B8001F7B5B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1EC27B3C1B8001F7B5B /* Store.swift */; };
+		BAA3C1EF27B3CD5A001F7B5B /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1EE27B3CD5A001F7B5B /* GameItem.swift */; };
+		BAA3C1F127B3CDB0001F7B5B /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1F027B3CDB0001F7B5B /* Rating.swift */; };
+		BAA3C1F327B3CDFB001F7B5B /* ShortScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1F227B3CDFB001F7B5B /* ShortScreenshot.swift */; };
+		BAA3C1F527B3CE1F001F7B5B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1F427B3CE1F001F7B5B /* Title.swift */; };
+		BAA3C1F727B3CE86001F7B5B /* Requirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1F627B3CE86001F7B5B /* Requirements.swift */; };
+		BAA3C1F927B3CEEE001F7B5B /* ParentPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1F827B3CEEE001F7B5B /* ParentPlatform.swift */; };
+		BAA3C1FB27B3CF8B001F7B5B /* EsrbRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1FA27B3CF8B001F7B5B /* EsrbRating.swift */; };
+		BAA3C1FD27B3CFE8001F7B5B /* PlatformSpesific.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1FC27B3CFE8001F7B5B /* PlatformSpesific.swift */; };
+		BAA3C1FF27B3D059001F7B5B /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1FE27B3D059001F7B5B /* Genre.swift */; };
+		BAA3C20127B3D088001F7B5B /* AddedByStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C20027B3D088001F7B5B /* AddedByStatus.swift */; };
+		BAA3C20327B3D221001F7B5B /* GameDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C20227B3D221001F7B5B /* GameDetailResponse.swift */; };
+		BAA3C20527B3D399001F7B5B /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C20427B3D399001F7B5B /* Developer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +62,22 @@
 		BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITests.swift; sourceTree = "<group>"; };
 		BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResponse.swift; sourceTree = "<group>"; };
+		BAA3C1C027B3B2B7001F7B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageView.swift; sourceTree = "<group>"; };
+		BAA3C1EA27B3C145001F7B5B /* GamesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResponse.swift; sourceTree = "<group>"; };
+		BAA3C1EC27B3C1B8001F7B5B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BAA3C1EE27B3CD5A001F7B5B /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
+		BAA3C1F027B3CDB0001F7B5B /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		BAA3C1F227B3CDFB001F7B5B /* ShortScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortScreenshot.swift; sourceTree = "<group>"; };
+		BAA3C1F427B3CE1F001F7B5B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		BAA3C1F627B3CE86001F7B5B /* Requirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirements.swift; sourceTree = "<group>"; };
+		BAA3C1F827B3CEEE001F7B5B /* ParentPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPlatform.swift; sourceTree = "<group>"; };
+		BAA3C1FA27B3CF8B001F7B5B /* EsrbRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsrbRating.swift; sourceTree = "<group>"; };
+		BAA3C1FC27B3CFE8001F7B5B /* PlatformSpesific.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSpesific.swift; sourceTree = "<group>"; };
+		BAA3C1FE27B3D059001F7B5B /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		BAA3C20027B3D088001F7B5B /* AddedByStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedByStatus.swift; sourceTree = "<group>"; };
+		BAA3C20227B3D221001F7B5B /* GameDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailResponse.swift; sourceTree = "<group>"; };
+		BAA3C20427B3D399001F7B5B /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA3C1C827B3B9FC001F7B5B /* NetworkImage in Frameworks */,
+				BAA3C1CD27B3BC98001F7B5B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +130,12 @@
 		BAA3C18F27B39C36001F7B5B /* gemmu */ = {
 			isa = PBXGroup;
 			children = (
-				BAA3C1BC27B3B055001F7B5B /* models */,
+				BAA3C1E927B3C137001F7B5B /* models */,
+				BAA3C1C327B3B8BC001F7B5B /* views */,
 				BAA3C19027B39C36001F7B5B /* gemmuApp.swift */,
-				BAA3C19227B39C36001F7B5B /* ContentView.swift */,
 				BAA3C19427B39C38001F7B5B /* Assets.xcassets */,
 				BAA3C19627B39C38001F7B5B /* Preview Content */,
+				BAA3C1C027B3B2B7001F7B5B /* Constants.swift */,
 			);
 			path = gemmu;
 			sourceTree = "<group>";
@@ -130,10 +165,32 @@
 			path = gemmuUITests;
 			sourceTree = "<group>";
 		};
-		BAA3C1BC27B3B055001F7B5B /* models */ = {
+		BAA3C1C327B3B8BC001F7B5B /* views */ = {
 			isa = PBXGroup;
 			children = (
-				BAA3C1BD27B3B06B001F7B5B /* GamesResponse.swift */,
+				BAA3C19227B39C36001F7B5B /* ContentView.swift */,
+				BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BAA3C1E927B3C137001F7B5B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C1EA27B3C145001F7B5B /* GamesResponse.swift */,
+				BAA3C1EC27B3C1B8001F7B5B /* Store.swift */,
+				BAA3C1EE27B3CD5A001F7B5B /* GameItem.swift */,
+				BAA3C1F027B3CDB0001F7B5B /* Rating.swift */,
+				BAA3C1F227B3CDFB001F7B5B /* ShortScreenshot.swift */,
+				BAA3C1F427B3CE1F001F7B5B /* Title.swift */,
+				BAA3C1F627B3CE86001F7B5B /* Requirements.swift */,
+				BAA3C1F827B3CEEE001F7B5B /* ParentPlatform.swift */,
+				BAA3C1FA27B3CF8B001F7B5B /* EsrbRating.swift */,
+				BAA3C1FC27B3CFE8001F7B5B /* PlatformSpesific.swift */,
+				BAA3C1FE27B3D059001F7B5B /* Genre.swift */,
+				BAA3C20027B3D088001F7B5B /* AddedByStatus.swift */,
+				BAA3C20227B3D221001F7B5B /* GameDetailResponse.swift */,
+				BAA3C20427B3D399001F7B5B /* Developer.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -154,6 +211,10 @@
 			dependencies = (
 			);
 			name = gemmu;
+			packageProductDependencies = (
+				BAA3C1C727B3B9FC001F7B5B /* NetworkImage */,
+				BAA3C1CC27B3BC98001F7B5B /* Alamofire */,
+			);
 			productName = gemmu;
 			productReference = BAA3C18D27B39C36001F7B5B /* gemmu.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +287,10 @@
 				Base,
 			);
 			mainGroup = BAA3C18427B39C36001F7B5B;
+			packageReferences = (
+				BAA3C1C627B3B9FC001F7B5B /* XCRemoteSwiftPackageReference "NetworkImage" */,
+				BAA3C1CB27B3BC98001F7B5B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,9 +333,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA3C20527B3D399001F7B5B /* Developer.swift in Sources */,
+				BAA3C1F527B3CE1F001F7B5B /* Title.swift in Sources */,
 				BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */,
-				BAA3C1BE27B3B06B001F7B5B /* GamesResponse.swift in Sources */,
+				BAA3C1EB27B3C145001F7B5B /* GamesResponse.swift in Sources */,
+				BAA3C1C527B3B9D4001F7B5B /* AboutPageView.swift in Sources */,
+				BAA3C1FD27B3CFE8001F7B5B /* PlatformSpesific.swift in Sources */,
+				BAA3C1ED27B3C1B8001F7B5B /* Store.swift in Sources */,
+				BAA3C1F327B3CDFB001F7B5B /* ShortScreenshot.swift in Sources */,
+				BAA3C1FB27B3CF8B001F7B5B /* EsrbRating.swift in Sources */,
+				BAA3C1F127B3CDB0001F7B5B /* Rating.swift in Sources */,
+				BAA3C1FF27B3D059001F7B5B /* Genre.swift in Sources */,
+				BAA3C1EF27B3CD5A001F7B5B /* GameItem.swift in Sources */,
 				BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */,
+				BAA3C1C127B3B2B8001F7B5B /* Constants.swift in Sources */,
+				BAA3C1F927B3CEEE001F7B5B /* ParentPlatform.swift in Sources */,
+				BAA3C20327B3D221001F7B5B /* GameDetailResponse.swift in Sources */,
+				BAA3C1F727B3CE86001F7B5B /* Requirements.swift in Sources */,
+				BAA3C20127B3D088001F7B5B /* AddedByStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +677,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAA3C1C627B3B9FC001F7B5B /* XCRemoteSwiftPackageReference "NetworkImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/NetworkImage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BAA3C1CB27B3BC98001F7B5B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAA3C1C727B3B9FC001F7B5B /* NetworkImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAA3C1C627B3B9FC001F7B5B /* XCRemoteSwiftPackageReference "NetworkImage" */;
+			productName = NetworkImage;
+		};
+		BAA3C1CC27B3BC98001F7B5B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAA3C1CB27B3BC98001F7B5B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAA3C18527B39C36001F7B5B /* Project object */;
 }
