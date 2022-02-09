@@ -6,3 +6,7 @@
 //
 
 import Foundation
+struct Store: Codable {
+    let id: Int
+    let store: Genre
+}
