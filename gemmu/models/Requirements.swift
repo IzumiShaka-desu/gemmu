@@ -6,3 +6,7 @@
 //
 
 import Foundation
+struct Requirements: Codable {
+    let minimum: String
+    let recommended: String?
+}
