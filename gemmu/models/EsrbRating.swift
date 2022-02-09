@@ -6,3 +6,7 @@
 //
 
 import Foundation
+struct EsrbRating: Codable {
+    let id: Int
+    let name, slug: String
+}
