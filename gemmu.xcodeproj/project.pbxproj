@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19027B39C36001F7B5B /* gemmuApp.swift */; };
+		BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19227B39C36001F7B5B /* ContentView.swift */; };
+		BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19427B39C38001F7B5B /* Assets.xcassets */; };
+		BAA3C19827B39C38001F7B5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */; };
+		BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */; };
+		BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */; };
+		BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAA3C19E27B39C38001F7B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAA3C18527B39C36001F7B5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA3C18C27B39C36001F7B5B;
+			remoteInfo = gemmu;
+		};
+		BAA3C1A827B39C38001F7B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAA3C18527B39C36001F7B5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA3C18C27B39C36001F7B5B;
+			remoteInfo = gemmu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAA3C18D27B39C36001F7B5B /* gemmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gemmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA3C19027B39C36001F7B5B /* gemmuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuApp.swift; sourceTree = "<group>"; };
+		BAA3C19227B39C36001F7B5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAA3C19427B39C38001F7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuTests.swift; sourceTree = "<group>"; };
+		BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITests.swift; sourceTree = "<group>"; };
+		BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAA3C18A27B39C36001F7B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C19A27B39C38001F7B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C1A427B39C38001F7B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAA3C18427B39C36001F7B5B = {
+			isa = PBXGroup;
+			children = (
+				BAA3C18F27B39C36001F7B5B /* gemmu */,
+				BAA3C1A027B39C38001F7B5B /* gemmuTests */,
+				BAA3C1AA27B39C38001F7B5B /* gemmuUITests */,
+				BAA3C18E27B39C36001F7B5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAA3C18E27B39C36001F7B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C18D27B39C36001F7B5B /* gemmu.app */,
+				BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */,
+				BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA3C18F27B39C36001F7B5B /* gemmu */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C19027B39C36001F7B5B /* gemmuApp.swift */,
+				BAA3C19227B39C36001F7B5B /* ContentView.swift */,
+				BAA3C19427B39C38001F7B5B /* Assets.xcassets */,
+				BAA3C19627B39C38001F7B5B /* Preview Content */,
+			);
+			path = gemmu;
+			sourceTree = "<group>";
+		};
+		BAA3C19627B39C38001F7B5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAA3C1A027B39C38001F7B5B /* gemmuTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */,
+			);
+			path = gemmuTests;
+			sourceTree = "<group>";
+		};
+		BAA3C1AA27B39C38001F7B5B /* gemmuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */,
+				BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */,
+			);
+			path = gemmuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAA3C18C27B39C36001F7B5B /* gemmu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmu" */;
+			buildPhases = (
+				BAA3C18927B39C36001F7B5B /* Sources */,
+				BAA3C18A27B39C36001F7B5B /* Frameworks */,
+				BAA3C18B27B39C36001F7B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gemmu;
+			productName = gemmu;
+			productReference = BAA3C18D27B39C36001F7B5B /* gemmu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAA3C19C27B39C38001F7B5B /* gemmuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuTests" */;
+			buildPhases = (
+				BAA3C19927B39C38001F7B5B /* Sources */,
+				BAA3C19A27B39C38001F7B5B /* Frameworks */,
+				BAA3C19B27B39C38001F7B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA3C19F27B39C38001F7B5B /* PBXTargetDependency */,
+			);
+			name = gemmuTests;
+			productName = gemmuTests;
+			productReference = BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAA3C1A627B39C38001F7B5B /* gemmuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuUITests" */;
+			buildPhases = (
+				BAA3C1A327B39C38001F7B5B /* Sources */,
+				BAA3C1A427B39C38001F7B5B /* Frameworks */,
+				BAA3C1A527B39C38001F7B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA3C1A927B39C38001F7B5B /* PBXTargetDependency */,
+			);
+			name = gemmuUITests;
+			productName = gemmuUITests;
+			productReference = BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAA3C18527B39C36001F7B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BAA3C18C27B39C36001F7B5B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BAA3C19C27B39C38001F7B5B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BAA3C18C27B39C36001F7B5B;
+					};
+					BAA3C1A627B39C38001F7B5B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BAA3C18C27B39C36001F7B5B;
+					};
+				};
+			};
+			buildConfigurationList = BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "gemmu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAA3C18427B39C36001F7B5B;
+			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA3C18C27B39C36001F7B5B /* gemmu */,
+				BAA3C19C27B39C38001F7B5B /* gemmuTests */,
+				BAA3C1A627B39C38001F7B5B /* gemmuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAA3C18B27B39C36001F7B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA3C19827B39C38001F7B5B /* Preview Assets.xcassets in Resources */,
+				BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C19B27B39C38001F7B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C1A527B39C38001F7B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA3C18927B39C36001F7B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */,
+				BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C19927B39C38001F7B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA3C1A327B39C38001F7B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */,
+				BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAA3C19F27B39C38001F7B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA3C18C27B39C36001F7B5B /* gemmu */;
+			targetProxy = BAA3C19E27B39C38001F7B5B /* PBXContainerItemProxy */;
+		};
+		BAA3C1A927B39C38001F7B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA3C18C27B39C36001F7B5B /* gemmu */;
+			targetProxy = BAA3C1A827B39C38001F7B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BAA3C1AF27B39C38001F7B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAA3C1B027B39C38001F7B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAA3C1B227B39C38001F7B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gemmu/Preview Content\"";
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA3C1B327B39C38001F7B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gemmu/Preview Content\"";
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAA3C1B527B39C38001F7B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gemmu.app/gemmu";
+			};
+			name = Debug;
+		};
+		BAA3C1B627B39C38001F7B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gemmu.app/gemmu";
+			};
+			name = Release;
+		};
+		BAA3C1B827B39C38001F7B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gemmu;
+			};
+			name = Debug;
+		};
+		BAA3C1B927B39C38001F7B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBQN8N734M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DarkshanDev.gemmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gemmu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "gemmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA3C1AF27B39C38001F7B5B /* Debug */,
+				BAA3C1B027B39C38001F7B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA3C1B227B39C38001F7B5B /* Debug */,
+				BAA3C1B327B39C38001F7B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA3C1B527B39C38001F7B5B /* Debug */,
+				BAA3C1B627B39C38001F7B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA3C1B827B39C38001F7B5B /* Debug */,
+				BAA3C1B927B39C38001F7B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAA3C18527B39C36001F7B5B /* Project object */;
+}
