@@ -6,3 +6,9 @@
 //
 
 import Foundation
+enum Title: String, Codable {
+    case exceptional = "exceptional"
+    case meh = "meh"
+    case recommended = "recommended"
+    case skip = "skip"
+}
