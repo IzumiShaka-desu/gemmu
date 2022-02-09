@@ -1,5 +1,5 @@
 //
-//  GamesResponse.swift
+//  ParentPlatform.swift
 //  gemmu
 //
 //  Created by Akashaka on 09/02/22.
