@@ -4,12 +4,34 @@
 //
 //  Created by Akashaka on 09/02/22.
 //
-
 import SwiftUI
+import NetworkImage
 
 struct AboutPageView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack(){
+                Spacer()
+                NetworkImage(url: URL(string: Constants.profileImageUrl)) { image in
+                    image.resizable()
+                } placeholder: {
+                    ProgressView()
+                } fallback: {
+                    Image(systemName: "photo")                     }
+                .frame(width: 150, height: 150)
+                .clipped()
+                .background().cornerRadius(10)
+                Text(Constants.profileName)
+                Text(Constants.positionName)
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+            }.navigationTitle("About").navigationBarTitleDisplayMode(.inline).toolbar{
+            }
+        }.padding(0)
+        
     }
 }
 
