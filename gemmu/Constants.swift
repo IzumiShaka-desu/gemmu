@@ -11,4 +11,5 @@ class Constants{
     
     static let profileName="Sesaka Aji Nursyah Bantani"
     static let positionName="Mobile Developer"
+    static let baseUrl="https://api.rawg.io/api"
 }
