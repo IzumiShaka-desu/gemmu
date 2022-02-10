@@ -12,4 +12,5 @@ class Constants{
     static let profileName="Sesaka Aji Nursyah Bantani"
     static let positionName="Mobile Developer"
     static let baseUrl="https://api.rawg.io/api"
+    static let apiKey="THIS_IS_YOUR_API_KEY"
 }
