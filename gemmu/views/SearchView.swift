@@ -8,10 +8,66 @@
 import SwiftUI
 
 struct SearchView: View {
+    @ObservedObject var controller: SearchViewController = SearchViewController.instance
+
+    @State private var isEditing = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack(alignment: .top) {
+            VStack {
+                HStack(alignment: .top) {
+                    TextField("Search ...", text: $controller.query )
+                        .padding(7)
+                        .padding(.horizontal, 25)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(8)
+                        .padding(.horizontal, 10)
+                        .onTapGesture {
+                            self.isEditing = true
+                        }
+                    if isEditing {
+                        HStack {
+                            Button(action: {
+                                self.controller.executeSearch()                            }) {
+                                    Image(systemName: "magnifyingglass.circle").frame(width: 40, height: 40)                            }
+                            Button(action: {
+                                self.isEditing = false
+                                self.controller.query = ""
+                            }) {
+                                Text("Cancel")
+                            }
+                        }.padding(.trailing, 10)
+                            .transition(.move(edge: .trailing))
+                            .animation(.default)
+
+                    }
+                }.padding(16)
+
+                ZStack(alignment: .top) {
+                    Color.flatDarkBackground.ignoresSafeArea()
+                    VStack {
+                        if self.controller.isLoading {
+                            ProgressView().padding(16)
+                        } else {
+                            if let games=controller.searchResult?.results {
+                                    List(games, id: \.id) {item in
+                                        ItemList(title: item.name, releaseDate: item.released ?? "", platforms: item.extractGenreName(), genres: [], imageUrl: item.backgroundImage ?? "", id: item.id).frame(width: .infinity, height: 150).listRowBackground(Color.flatDarkBackground)
+                                }
+
+                            } else {
+                                Text("Search result empty")
+
+                            }
+
+                        }
+                    }
+
+                }.padding(0)
+
+            }
+
+        }
+    }}
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {

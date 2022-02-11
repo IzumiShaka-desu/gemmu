@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct gemmuApp: App {
+struct GemmuApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

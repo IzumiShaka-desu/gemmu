@@ -12,7 +12,7 @@ struct Genre: Codable {
     let gamesCount: Int
     let imageBackground: String
     let domain: String?
-    let language: Language?
+    let language: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name, slug
@@ -20,8 +20,4 @@ struct Genre: Codable {
         case imageBackground = "image_background"
         case domain, language
     }
-}
-
-enum Language: String, Codable {
-    case eng = "eng"
 }

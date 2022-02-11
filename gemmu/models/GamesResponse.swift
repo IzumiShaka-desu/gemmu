@@ -13,10 +13,10 @@ struct GamesResponse: Codable {
     let count: Int
     let next: String
     let results: [GameItem]
-    let seoTitle, seoDescription, seoKeywords, seoH1: String
-    let noindex, nofollow: Bool
-    let gamesResponseDescription: String
-    let nofollowCollections: [String]
+    let seoTitle, seoDescription, seoKeywords, seoH1: String?
+    let noindex, nofollow: Bool?
+    let gamesResponseDescription: String?
+    let nofollowCollections: [String]?
 
     enum CodingKeys: String, CodingKey {
         case count, next, results
@@ -29,4 +29,3 @@ struct GamesResponse: Codable {
         case nofollowCollections = "nofollow_collections"
     }
 }
-

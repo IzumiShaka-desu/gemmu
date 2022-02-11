@@ -12,12 +12,10 @@
 		BA530EEF27B4F8FA00E4DD64 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA530EEE27B4F8FA00E4DD64 /* SearchViewController.swift */; };
 		BA530EF127B5342200E4DD64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA530EF027B5342200E4DD64 /* HomeViewController.swift */; };
 		BA530EF427B537D700E4DD64 /* GamesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA530EF327B537D700E4DD64 /* GamesDataProvider.swift */; };
-		BA530EF927B54B1E00E4DD64 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = BA530EF827B54B1E00E4DD64 /* .env */; };
 		BA5DD96127B5FD1400DC96CD /* GameSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DD96027B5FD1300DC96CD /* GameSearchResponse.swift */; };
 		BA5DD96327B5FEC800DC96CD /* SearchItemResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DD96227B5FEC800DC96CD /* SearchItemResult.swift */; };
 		BA5DD96527B6117700DC96CD /* DetailGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DD96427B6117700DC96CD /* DetailGameView.swift */; };
 		BA5DD96927B6135300DC96CD /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DD96827B6135300DC96CD /* DetailGameViewController.swift */; };
-		BA97AC8627B3DB0400139D3F /* Dummies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97AC8527B3DB0400139D3F /* Dummies.swift */; };
 		BA97AC8927B3DC9100139D3F /* TagsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97AC8827B3DC9100139D3F /* TagsCard.swift */; };
 		BA97AC8B27B3DD3800139D3F /* Extensionn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97AC8A27B3DD3800139D3F /* Extensionn.swift */; };
 		BA97AC8F27B3E6C200139D3F /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97AC8E27B3E6C200139D3F /* ItemList.swift */; };
@@ -71,12 +69,10 @@
 		BA530EEE27B4F8FA00E4DD64 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BA530EF027B5342200E4DD64 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA530EF327B537D700E4DD64 /* GamesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDataProvider.swift; sourceTree = "<group>"; };
-		BA530EF827B54B1E00E4DD64 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		BA5DD96027B5FD1300DC96CD /* GameSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSearchResponse.swift; sourceTree = "<group>"; };
 		BA5DD96227B5FEC800DC96CD /* SearchItemResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemResult.swift; sourceTree = "<group>"; };
 		BA5DD96427B6117700DC96CD /* DetailGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameView.swift; sourceTree = "<group>"; };
 		BA5DD96827B6135300DC96CD /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
-		BA97AC8527B3DB0400139D3F /* Dummies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummies.swift; sourceTree = "<group>"; };
 		BA97AC8827B3DC9100139D3F /* TagsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCard.swift; sourceTree = "<group>"; };
 		BA97AC8A27B3DD3800139D3F /* Extensionn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensionn.swift; sourceTree = "<group>"; };
 		BA97AC8E27B3E6C200139D3F /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
@@ -85,9 +81,9 @@
 		BAA3C19227B39C36001F7B5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAA3C19427B39C38001F7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA3C19D27B39C38001F7B5B /* GemmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuTests.swift; sourceTree = "<group>"; };
-		BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA3C1A727B39C38001F7B5B /* GemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITests.swift; sourceTree = "<group>"; };
 		BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BAA3C1C027B3B2B7001F7B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -176,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				BAA3C18D27B39C36001F7B5B /* Gemmu.app */,
-				BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */,
-				BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */,
+				BAA3C19D27B39C38001F7B5B /* GemmuTests.xctest */,
+				BAA3C1A727B39C38001F7B5B /* GemmuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,9 +189,7 @@
 				BAA3C19427B39C38001F7B5B /* Assets.xcassets */,
 				BAA3C19627B39C38001F7B5B /* Preview Content */,
 				BAA3C1C027B3B2B7001F7B5B /* Constants.swift */,
-				BA97AC8527B3DB0400139D3F /* Dummies.swift */,
 				BA97AC8A27B3DD3800139D3F /* Extensionn.swift */,
-				BA530EF827B54B1E00E4DD64 /* .env */,
 			);
 			path = gemmu;
 			sourceTree = "<group>";
@@ -264,20 +258,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BAA3C18C27B39C36001F7B5B /* gemmu */ = {
+		BAA3C18C27B39C36001F7B5B /* Gemmu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmu" */;
+			buildConfigurationList = BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "Gemmu" */;
 			buildPhases = (
 				BAA3C18927B39C36001F7B5B /* Sources */,
 				BAA3C18A27B39C36001F7B5B /* Frameworks */,
 				BAA3C18B27B39C36001F7B5B /* Resources */,
-				BA5DD96A27B65EC200DC96CD /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = gemmu;
+			name = Gemmu;
 			packageProductDependencies = (
 				BAA3C1C727B3B9FC001F7B5B /* NetworkImage */,
 				BAA3C1CC27B3BC98001F7B5B /* Alamofire */,
@@ -286,9 +279,9 @@
 			productReference = BAA3C18D27B39C36001F7B5B /* Gemmu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BAA3C19C27B39C38001F7B5B /* gemmuTests */ = {
+		BAA3C19C27B39C38001F7B5B /* GemmuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuTests" */;
+			buildConfigurationList = BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "GemmuTests" */;
 			buildPhases = (
 				BAA3C19927B39C38001F7B5B /* Sources */,
 				BAA3C19A27B39C38001F7B5B /* Frameworks */,
@@ -299,14 +292,14 @@
 			dependencies = (
 				BAA3C19F27B39C38001F7B5B /* PBXTargetDependency */,
 			);
-			name = gemmuTests;
+			name = GemmuTests;
 			productName = gemmuTests;
-			productReference = BAA3C19D27B39C38001F7B5B /* gemmuTests.xctest */;
+			productReference = BAA3C19D27B39C38001F7B5B /* GemmuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BAA3C1A627B39C38001F7B5B /* gemmuUITests */ = {
+		BAA3C1A627B39C38001F7B5B /* GemmuUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuUITests" */;
+			buildConfigurationList = BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "GemmuUITests" */;
 			buildPhases = (
 				BAA3C1A327B39C38001F7B5B /* Sources */,
 				BAA3C1A427B39C38001F7B5B /* Frameworks */,
@@ -317,9 +310,9 @@
 			dependencies = (
 				BAA3C1A927B39C38001F7B5B /* PBXTargetDependency */,
 			);
-			name = gemmuUITests;
+			name = GemmuUITests;
 			productName = gemmuUITests;
-			productReference = BAA3C1A727B39C38001F7B5B /* gemmuUITests.xctest */;
+			productReference = BAA3C1A727B39C38001F7B5B /* GemmuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +338,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "gemmu" */;
+			buildConfigurationList = BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "Gemmu" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -362,9 +355,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAA3C18C27B39C36001F7B5B /* gemmu */,
-				BAA3C19C27B39C38001F7B5B /* gemmuTests */,
-				BAA3C1A627B39C38001F7B5B /* gemmuUITests */,
+				BAA3C18C27B39C36001F7B5B /* Gemmu */,
+				BAA3C19C27B39C38001F7B5B /* GemmuTests */,
+				BAA3C1A627B39C38001F7B5B /* GemmuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,7 +367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA530EF927B54B1E00E4DD64 /* .env in Resources */,
 				BAA3C19827B39C38001F7B5B /* Preview Assets.xcassets in Resources */,
 				BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */,
 			);
@@ -395,26 +387,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BA5DD96A27B65EC200DC96CD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAA3C18927B39C36001F7B5B /* Sources */ = {
@@ -446,7 +418,6 @@
 				BA5DD96527B6117700DC96CD /* DetailGameView.swift in Sources */,
 				BA530EF427B537D700E4DD64 /* GamesDataProvider.swift in Sources */,
 				BAA3C1C127B3B2B8001F7B5B /* Constants.swift in Sources */,
-				BA97AC8627B3DB0400139D3F /* Dummies.swift in Sources */,
 				BAA3C1F927B3CEEE001F7B5B /* ParentPlatform.swift in Sources */,
 				BAA3C20327B3D221001F7B5B /* GameDetailResponse.swift in Sources */,
 				BA530EEC27B4BF2300E4DD64 /* HomeView.swift in Sources */,
@@ -477,12 +448,12 @@
 /* Begin PBXTargetDependency section */
 		BAA3C19F27B39C38001F7B5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAA3C18C27B39C36001F7B5B /* gemmu */;
+			target = BAA3C18C27B39C36001F7B5B /* Gemmu */;
 			targetProxy = BAA3C19E27B39C38001F7B5B /* PBXContainerItemProxy */;
 		};
 		BAA3C1A927B39C38001F7B5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAA3C18C27B39C36001F7B5B /* gemmu */;
+			target = BAA3C18C27B39C36001F7B5B /* Gemmu */;
 			targetProxy = BAA3C1A827B39C38001F7B5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -678,7 +649,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gemmu.app/gemmu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemmu.app/Gemmu";
 			};
 			name = Debug;
 		};
@@ -698,7 +669,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gemmu.app/gemmu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemmu.app/Gemmu";
 			};
 			name = Release;
 		};
@@ -741,7 +712,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "gemmu" */ = {
+		BAA3C18827B39C36001F7B5B /* Build configuration list for PBXProject "Gemmu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAA3C1AF27B39C38001F7B5B /* Debug */,
@@ -750,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmu" */ = {
+		BAA3C1B127B39C38001F7B5B /* Build configuration list for PBXNativeTarget "Gemmu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAA3C1B227B39C38001F7B5B /* Debug */,
@@ -759,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuTests" */ = {
+		BAA3C1B427B39C38001F7B5B /* Build configuration list for PBXNativeTarget "GemmuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAA3C1B527B39C38001F7B5B /* Debug */,
@@ -768,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "gemmuUITests" */ = {
+		BAA3C1B727B39C38001F7B5B /* Build configuration list for PBXNativeTarget "GemmuUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAA3C1B827B39C38001F7B5B /* Debug */,

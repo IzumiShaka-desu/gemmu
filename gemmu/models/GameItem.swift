@@ -7,7 +7,7 @@
 
 import Foundation
 struct GameItem: Codable {
-    let id: Int?
+    let id: Int
     let slug, name, released: String?
     let tba: Bool?
     let backgroundImage: String?
@@ -19,9 +19,9 @@ struct GameItem: Codable {
     let metacritic, playtime, suggestionsCount: Int?
     let updated: String?
     let reviewsCount: Int?
-    let platforms: [PlatformElement]?
+    let platforms: [PlatformElement]
     let parentPlatforms: [ParentPlatform]?
-    let genres: [Genre]?
+    let genres: [Genre]
     let stores: [Store]?
     let tags: [Genre]?
     let esrbRating: EsrbRating?
@@ -47,4 +47,29 @@ struct GameItem: Codable {
         case esrbRating = "esrb_rating"
         case shortScreenshots = "short_screenshots"
     }
+}
+extension GameItem {
+    func extractPlatformsImageLink() -> [String] {
+        var results: [String]=[]
+        for platform in self.platforms {
+            results.append(platform.platform.imageBackground)
+        }
+        return results
+    }
+    func extractPlatformsName() -> [String] {
+        var results: [String]=[]
+        for platform in self.platforms {
+            results.append(platform.platform.slug)
+        }
+        return results
+    }
+
+    func extractGenreName() -> [String] {
+        var results: [String]=[]
+        for genre in self.genres {
+            results.append(genre.name)
+        }
+        return results
+    }
+
 }

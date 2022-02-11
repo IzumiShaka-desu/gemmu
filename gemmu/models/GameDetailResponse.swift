@@ -35,8 +35,8 @@ struct GameDetailResponse: Codable {
     let parentPlatforms: [ParentPlatform]
     let platforms: [PlatformElement]
     let stores: [Store]
-    let genres, tags:[Genre]
-    let developers,  publishers: [Developer]
+    let genres, tags: [Genre]
+    let developers, publishers: [Developer]
     let esrbRating: EsrbRating
     let descriptionRaw: String
 

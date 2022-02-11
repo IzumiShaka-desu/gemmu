@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct TagsCard: View {
+    var text: String
+    var fontSize: CGFloat = 12.0
+    var bgColor: Color = Color.green
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Text(text)
+                .font(.system(size: fontSize, weight: .regular))
+                .lineLimit(2)
+                .foregroundColor(.white)
+                .padding(5)
+                .background(bgColor)
+                .cornerRadius(5)
+        }
+
     }
 }
 
 struct TagsCard_Previews: PreviewProvider {
     static var previews: some View {
-        TagsCard()
+        TagsCard(text: "tags")
     }
 }

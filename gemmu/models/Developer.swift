@@ -12,7 +12,7 @@ struct Developer: Codable {
     let gamesCount: Int
     let imageBackground: String
     let domain: String?
-    let language: Language?
+    let language: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name, slug
