@@ -7,7 +7,7 @@
 
 import XCTest
 
-class gemmuUITestsLaunchTests: XCTestCase {
+class GemmuUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
