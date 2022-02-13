@@ -17,7 +17,7 @@ class GameLocalDataProvider {
   func addOrDeleteFavoriteGame(favoritedGame: FavoriteGame, isFavorited: Bool) {
     guard let realm = try? Realm() else { return  }
     if isFavorited {
-      guard let object=realm.object(ofType: FavoriteGame.self, forPrimaryKey: favoritedGame._id) else { return }
+      guard let object=realm.object(ofType: FavoriteGame.self, forPrimaryKey: favoritedGame.id) else { return }
       $games.remove(object)
     } else {
       $games.append(favoritedGame)
