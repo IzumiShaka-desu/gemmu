@@ -15,21 +15,26 @@ struct FavoriteView: View {
     ZStack(alignment: .top) {
       Color.flatDarkBackground.ignoresSafeArea()
       VStack {
-        List(games, id: \._id) {
-          item in
-            ItemList(
-              title: item.name ,
-              releaseDate: item.releaseDate,
-              platforms: [item.rank],
-              genres: item.genres.sorted(),
-              imageUrl: item.imageUrl,
-              id: item._id
-            ).frame(
-              width: .infinity,
-              height: 150
-            )
-            .listRowBackground(Color.flatDarkBackground)
+        if games.isEmpty {
+          Text("You don't have any favourite games")
+        } else {
+          List(games, id: \.id) {item in
+              ItemList(
+                title: item.name ,
+                releaseDate: item.releaseDate,
+                platforms: [item.rank],
+                genres: item.genres.sorted(),
+                imageUrl: item.imageUrl,
+                id: item.id
+              ).frame(
+                width: .infinity,
+                height: 150
+              )
+              .listRowBackground(Color.flatDarkBackground)
+          }
         }
+        
+        
       }
 
     }.padding(0)
