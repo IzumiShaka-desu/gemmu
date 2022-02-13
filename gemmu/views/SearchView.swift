@@ -27,18 +27,18 @@ struct SearchView: View {
             }
           if isEditing {
             HStack {
-              Button(action: {
+              Button {
                 self.controller.executeSearch()
-
               }
-              ) {
+              label: {
                 Image(systemName: "magnifyingglass.circle")
                   .frame(width: 40, height: 40)
               }
-              Button(action: {
+              Button {
                 self.isEditing = false
                 self.controller.query = ""
-              }) {
+              }
+              label: {
                 Text("Cancel")
               }
             }.padding(.trailing, 10)
