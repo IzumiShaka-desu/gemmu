@@ -40,7 +40,11 @@ struct ContentView: View {
                       Image(systemName: "star.circle.fill")
                       Text("Favourite")
                   }
-                }.accentColor(Color.flatWhiteBackground).navigationTitle("Game Store").navigationBarTitleDisplayMode(.inline).toolbar {
+                }
+                .accentColor(Color.flatWhiteBackground)
+                .navigationTitle("Game Store")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: AboutPageView(), label: {
                             HStack {
