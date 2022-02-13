@@ -26,7 +26,7 @@ class DetailGameViewController: ObservableObject {
     if let game=data {
       guard let _ = try? Realm() else { return  }
       let newData=FavoriteGame()
-      newData._id = game.id
+      newData.id = game.id
       newData.imageUrl = game.backgroundImage
       for genre in game.genres {
         newData.genres.append(genre.name)
