@@ -33,8 +33,6 @@ struct FavoriteView: View {
               .listRowBackground(Color.flatDarkBackground)
           }
         }
-        
-        
       }
 
     }.padding(0)
