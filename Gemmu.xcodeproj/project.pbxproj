@@ -23,9 +23,7 @@
 		BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19227B39C36001F7B5B /* ContentView.swift */; };
 		BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19427B39C38001F7B5B /* Assets.xcassets */; };
 		BAA3C19827B39C38001F7B5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */; };
-		BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */; };
 		BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */; };
-		BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */; };
 		BAA3C1C127B3B2B8001F7B5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1C027B3B2B7001F7B5B /* Constants.swift */; };
 		BAA3C1C527B3B9D4001F7B5B /* AboutPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */; };
 		BAA3C1C827B3B9FC001F7B5B /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = BAA3C1C727B3B9FC001F7B5B /* NetworkImage */; };
@@ -50,6 +48,9 @@
 		BAAB7CF627B7DE8F0040AA20 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BAAB7CF527B7DE8F0040AA20 /* RealmSwift */; };
 		BAAB7CFA27B863F20040AA20 /* GamesLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB7CF927B863F20040AA20 /* GamesLocalDataProvider.swift */; };
 		BAAB7D0227B876010040AA20 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = BAAB7D0127B876010040AA20 /* PopupView */; };
+		BAE5A92627B8EF4F00970057 /* GemmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5A92527B8EF4F00970057 /* GemmuTests.swift */; };
+		BAE5A92827B8EF8B00970057 /* GemmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5A92727B8EF8B00970057 /* GemmuUITestsLaunchTests.swift */; };
+		BAE5A92A27B8EFBB00970057 /* GemmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5A92927B8EFBB00970057 /* GemmuUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,10 +89,8 @@
 		BAA3C19427B39C38001F7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA3C19727B39C38001F7B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAA3C19D27B39C38001F7B5B /* GemmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuTests.swift; sourceTree = "<group>"; };
 		BAA3C1A727B39C38001F7B5B /* GemmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITests.swift; sourceTree = "<group>"; };
-		BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BAA3C1C027B3B2B7001F7B5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageView.swift; sourceTree = "<group>"; };
 		BAA3C1EA27B3C145001F7B5B /* GamesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResponse.swift; sourceTree = "<group>"; };
@@ -113,6 +112,9 @@
 		BAAB7CF027B7DD4D0040AA20 /* FavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGame.swift; sourceTree = "<group>"; };
 		BAAB7CF927B863F20040AA20 /* GamesLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesLocalDataProvider.swift; sourceTree = "<group>"; };
 		BAAB7D0327B8A5B00040AA20 /* Gemmu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Gemmu.entitlements; path = Gemmu/Gemmu.entitlements; sourceTree = "<group>"; };
+		BAE5A92527B8EF4F00970057 /* GemmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmuTests.swift; sourceTree = "<group>"; };
+		BAE5A92727B8EF8B00970057 /* GemmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAE5A92927B8EFBB00970057 /* GemmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmuUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +224,7 @@
 		BAA3C1A027B39C38001F7B5B /* gemmuTests */ = {
 			isa = PBXGroup;
 			children = (
-				BAA3C1A127B39C38001F7B5B /* gemmuTests.swift */,
+				BAE5A92527B8EF4F00970057 /* GemmuTests.swift */,
 			);
 			path = gemmuTests;
 			sourceTree = "<group>";
@@ -231,7 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				BAA3C1AB27B39C38001F7B5B /* gemmuUITests.swift */,
-				BAA3C1AD27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift */,
+				BAE5A92727B8EF8B00970057 /* GemmuUITestsLaunchTests.swift */,
+				BAE5A92927B8EFBB00970057 /* GemmuUITests.swift */,
 			);
 			path = gemmuUITests;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				BAA3C18927B39C36001F7B5B /* Sources */,
 				BAA3C18A27B39C36001F7B5B /* Frameworks */,
 				BAA3C18B27B39C36001F7B5B /* Resources */,
+				BAE5A92227B8EEBB00970057 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -420,6 +424,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BAE5A92227B8EEBB00970057 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAA3C18927B39C36001F7B5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -465,7 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA3C1A227B39C38001F7B5B /* gemmuTests.swift in Sources */,
+				BAE5A92A27B8EFBB00970057 /* GemmuUITests.swift in Sources */,
+				BAE5A92827B8EF8B00970057 /* GemmuUITestsLaunchTests.swift in Sources */,
+				BAE5A92627B8EF4F00970057 /* GemmuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA3C1AE27B39C38001F7B5B /* gemmuUITestsLaunchTests.swift in Sources */,
 				BAA3C1AC27B39C38001F7B5B /* gemmuUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
