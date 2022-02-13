@@ -20,7 +20,11 @@ struct ItemList: View {
         ZStack(alignment: .leading) {
             Color.flatDarkCardBackground
             HStack {
-                NavigationLink(destination: DetailGameView(gameId: id, controller: DetailGameViewController.instance), label: {
+                NavigationLink(
+                    destination: DetailGameView(gameId: id,
+                     controller: DetailGameViewController.instance
+                     ),
+                      label: {
                     ZStack {
                         NetworkImage(url: URL(string: imageUrl)) { image in
                             image.resizable()
@@ -44,7 +48,10 @@ struct ItemList: View {
                             .padding(.bottom, 5).foregroundColor(.white)
 
                         HStack(alignment: .center) {
-                          ForEach(platforms, id: \.self) { platform in                                TagsCard(text: platform, bgColor: .green)
+                          ForEach(platforms, id: \.self) { platform in
+                                TagsCard(
+                                    text: platform,
+                                     bgColor: .green)
                             }
                         }
                         .padding(.bottom, 5)
@@ -74,6 +81,12 @@ struct ItemList_Previews: PreviewProvider {
 
         let platforms: [String] = ["PS5", "PC"]
 
-        ItemList(title: "title", releaseDate: "address", platforms: platforms, genres: ["action", "rpg"], imageUrl: Constants.profileImageUrl, id: 3498)
+        ItemList(
+            title: "title",
+             releaseDate: "address",
+              platforms: platforms,
+               genres: ["action", "rpg"],
+                imageUrl: Constants.profileImageUrl,
+                 id: 3498)
     }
 }
