@@ -24,7 +24,6 @@ class DetailGameViewController: ObservableObject {
   }
   func changeStatusFavorited() {
     if let game=data {
-      guard let _ = try? Realm() else { return  }
       let newData=FavoriteGame()
       newData.id = game.id
       newData.imageUrl = game.backgroundImage
