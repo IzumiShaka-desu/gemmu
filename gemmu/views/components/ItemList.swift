@@ -15,7 +15,7 @@ struct ItemList: View {
     var genres: [String]
     var imageUrl: String
     var id: Int
-    
+
     var body: some View {
         ZStack(alignment: .leading) {
             Color.flatDarkCardBackground
@@ -33,7 +33,7 @@ struct ItemList: View {
                         .background().cornerRadius(10)
                     }
                     .frame(width: 70, height: 70, alignment: .center)
-                    
+
                     VStack(alignment: .leading) {
                         Text(title).foregroundColor(.white)
                             .font(.headline)
@@ -42,22 +42,22 @@ struct ItemList: View {
                             .padding(.bottom, 5)
                         Text(releaseDate)
                             .padding(.bottom, 5).foregroundColor(.white)
-                        
+
                         HStack(alignment: .center) {
                           ForEach(platforms, id: \.self) { platform in                                TagsCard(text: platform, bgColor: .green)
                             }
                         }
                         .padding(.bottom, 5)
-                        
+
                         HStack {
                             ForEach(genres, id: \.self) { genre in
-                              TagsCard(text: genre,bgColor: .pink)
+                              TagsCard(text: genre, bgColor: .pink)
                             }
                         }
-                        
+
                     }
                     .padding(.horizontal, 5)
-                    
+
                 }
                 )
                 .padding(0)
@@ -66,14 +66,14 @@ struct ItemList: View {
             .padding(15)
         }        .clipShape(RoundedRectangle(cornerRadius: 15))
     }
-    
+
 }
 
 struct ItemList_Previews: PreviewProvider {
     static var previews: some View {
-        
+
         let platforms: [String] = ["PS5", "PC"]
-        
+
         ItemList(title: "title", releaseDate: "address", platforms: platforms, genres: ["action", "rpg"], imageUrl: Constants.profileImageUrl, id: 3498)
     }
 }

@@ -10,11 +10,11 @@ import Combine
 import Alamofire
 class GamesDataProvider {
   static let shared = GamesDataProvider()
-  
+
   func fetchGames(query: String?=nil,
                   currentTarget: String?=nil,
                   completion: @escaping (GamesResponse?) -> Void) {
-    
+
     if let currentUrl=currentTarget {
       AF.request(currentUrl, method: .get).responseDecodable(of: GamesResponse.self) {response in
         completion(response.value )
@@ -27,44 +27,40 @@ class GamesDataProvider {
       ]
       components.queryItems=queryItems
       AF.request(components.url!, method: .get)
-        .responseDecodable(of: GamesResponse.self)
-      {response in
+        .responseDecodable(of: GamesResponse.self) {response in
         completion(response.value)
       }
     }
   }
-  
+
   func fetchDetailGame(id: Int, completion: @escaping (GameDetailResponse?) -> Void) {
-    
+
     var components = URLComponents(string: Constants.baseUrl+"/games/\(id)")!
-    
+
     components.queryItems=[
       URLQueryItem(name: "key", value: Constants.apiKey)
     ]
-    
+
     AF.request(components.url!, method: .get)
-      .responseDecodable(of: GameDetailResponse.self)
-    {response in
+      .responseDecodable(of: GameDetailResponse.self) {response in
       completion(response.value)
-      
+
     }
   }
-  
+
   func fetchSearchGames(query: String, completion: @escaping (GamesSearchResponse?) -> Void) {
     var components = URLComponents(string: Constants.baseUrl+"/games")!
-    
+
     components.queryItems=[
       URLQueryItem(name: "key", value: Constants.apiKey),
       URLQueryItem(name: "page_size", value: "25"),
       URLQueryItem(name: "search", value: query)
     ]
-    
-    
+
     AF.request(components.url!, method: .get)
-      .responseDecodable(of: GamesSearchResponse.self)
-    {response in
+      .responseDecodable(of: GamesSearchResponse.self) {response in
       completion(response.value)
     }
   }
-  
+
 }

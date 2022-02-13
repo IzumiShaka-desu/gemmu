@@ -7,7 +7,7 @@
 
 import RealmSwift
 
-class FavoriteGame: Object,Identifiable{
+class FavoriteGame: Object, Identifiable {
   @Persisted(primaryKey: true) var _id: Int
   @Persisted var name: String
   @Persisted var imageUrl: String

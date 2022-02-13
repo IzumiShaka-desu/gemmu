@@ -12,7 +12,6 @@ class SearchViewController: ObservableObject {
   @Published var isLoading: Bool = false
   @Published var query: String = ""
   @Published var searchResult: GamesSearchResponse?
-  
   func executeSearch() {
     self.isLoading=true
     dataProvider
@@ -20,6 +19,5 @@ class SearchViewController: ObservableObject {
         self.searchResult = result
         self.isLoading=false
       }
-  }
-  
+      }
 }

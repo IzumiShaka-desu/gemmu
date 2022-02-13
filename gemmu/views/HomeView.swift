@@ -48,7 +48,7 @@ struct HomeView: View {
               width: .infinity,
               height: 150
             ).listRowBackground(Color.flatDarkBackground)
-            
+
             if controller.data.last?.id==item.id { if(controller.nextPage?.count ?? 1)>29 {
               ZStack(alignment: .center) {
                 Color.flatDarkCardBackground
@@ -58,7 +58,7 @@ struct HomeView: View {
                     controller.fetchItems()
                   }
               }.listRowBackground(Color.flatDarkBackground)
-              
+
             } else {
               ZStack(alignment: .center) {
                 Color.flatDarkCardBackground
@@ -69,7 +69,7 @@ struct HomeView: View {
             }
           }
         }
-      }      
+      }
     }.padding(0)
   }
 }

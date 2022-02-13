@@ -6,16 +6,14 @@
 //
 import SnackBar
 class AppSnackBar: SnackBar {
-  
+
   override var style: SnackBarStyle {
     var style = SnackBarStyle()
     style.background = .flatDarkCardBackground
     style.textColor = .white
     return style
   }
-  func showSnacbar(isFavorited: Bool){
+  func showSnacbar(isFavorited: Bool) {
   }
-  
-
 
 }

@@ -10,12 +10,12 @@ import RealmSwift
 
 struct FavoriteView: View {
   @ObservedResults(FavoriteGame.self) var games
-  
+
   var body: some View {
     ZStack(alignment: .top) {
       Color.flatDarkBackground.ignoresSafeArea()
       VStack {
-        List(games,id:\._id){
+        List(games, id: \._id) {
           item in
             ItemList(
               title: item.name ,
@@ -31,7 +31,7 @@ struct FavoriteView: View {
             .listRowBackground(Color.flatDarkBackground)
         }
       }
-      
+
     }.padding(0)
   }
 }

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SearchView: View {
   @ObservedObject var controller: SearchViewController = SearchViewController.instance
-  
+
   @State private var isEditing = false
-  
+
   var body: some View {
     ZStack(alignment: .top) {
       VStack {
@@ -29,7 +29,7 @@ struct SearchView: View {
             HStack {
               Button(action: {
                 self.controller.executeSearch()
-                
+
               }
               ) {
                 Image(systemName: "magnifyingglass.circle")

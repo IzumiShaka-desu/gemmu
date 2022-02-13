@@ -10,16 +10,16 @@ import NetworkImage
 struct AboutPageView: View {
   @State private var bottomSheetShown = false
   @State var updater: Bool = false
-  @AppStorage("name",store: UserDefaults(
-    suiteName: "group.DarkshanDev.userdefaults")) private  var username:String?
-  @AppStorage("position",store: UserDefaults(
-    suiteName: "group.DarkshanDev.userdefaults")) private var position:String?
-  @AppStorage("imageUrl",store: UserDefaults(
-    suiteName: "group.DarkshanDev.userdefaults")) private  var imageUrl:String?
-  
+  @AppStorage("name", store: UserDefaults(
+    suiteName: "group.DarkshanDev.userdefaults")) private  var username: String?
+  @AppStorage("position", store: UserDefaults(
+    suiteName: "group.DarkshanDev.userdefaults")) private var position: String?
+  @AppStorage("imageUrl", store: UserDefaults(
+    suiteName: "group.DarkshanDev.userdefaults")) private  var imageUrl: String?
+
   var body: some View {
     GeometryReader { geometry in
-      HStack(alignment:.center){
+      HStack(alignment: .center) {
         Spacer()
         VStack {
           Spacer()
@@ -31,7 +31,7 @@ struct AboutPageView: View {
             ProgressView()
           } fallback: {
             Image(systemName: "photo")
-            
+
           }
           .frame(width: 150, height: 150)
           .clipped()
@@ -46,7 +46,7 @@ struct AboutPageView: View {
               Image(systemName: "pencil.circle")
               Text("Update user profile")
             }
-          );
+          )
           Spacer()
           Spacer()
           Spacer()
@@ -56,12 +56,12 @@ struct AboutPageView: View {
       BottomSheetView(
         isOpen: self.$bottomSheetShown,
         maxHeight: geometry.size.height * 0.7
-        
+
       ) {
         ProfileFormView(
-          username:username ?? "",
-          position:position ?? "",
-          imageUrl:imageUrl ?? "", onSubmit: {username,position,imageUrl in
+          username: username ?? "",
+          position: position ?? "",
+          imageUrl: imageUrl ?? "", onSubmit: {username, position, imageUrl in
             let storage = UserDefaults(
               suiteName: "group.DarkshanDev.userdefaults"
             )
@@ -74,19 +74,18 @@ struct AboutPageView: View {
         )
       }
     }.edgesIgnoringSafeArea(.all)
-    
-    
+
   }
 }
-struct ProfileFormView: View{
+struct ProfileFormView: View {
   @State  var username = ""
   @State  var position = ""
   @State  var imageUrl = ""
-  var onSubmit: (_ username:String?,
-                 _ position:String?,
-                 _ imageUrl:String?)->Void
-  var body: some View{
-    VStack{
+  var onSubmit: (_ username: String?,
+                 _ position: String?,
+                 _ imageUrl: String?) -> Void
+  var body: some View {
+    VStack {
       TextField("fill your name ...", text: $username )
         .padding(7)
         .padding(.horizontal, 25)
@@ -110,26 +109,25 @@ struct ProfileFormView: View{
           let name = username.isEmpty ? nil : username
           let position = position.isEmpty ? nil : position
           let imageUrl = imageUrl.isEmpty ? nil : imageUrl
-          onSubmit(name,position,imageUrl)
+          onSubmit(name, position, imageUrl)
         },
         label: {
           Image(systemName: "pencil.circle")
           Text("Update user profile")
         })
-      
-      
+
     }
-    
+
   }
 }
 
 struct BottomSheetView<Content: View>: View {
   @Binding var isOpen: Bool
-  
+
   let maxHeight: CGFloat
   let minHeight: CGFloat
   let content: Content
-  
+
   init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
     self.minHeight = maxHeight * Constants.minHeightRatio
     self.maxHeight = maxHeight
@@ -139,7 +137,7 @@ struct BottomSheetView<Content: View>: View {
   private var offset: CGFloat {
     isOpen ? 0 : maxHeight - minHeight
   }
-  
+
   private var indicator: some View {
     RoundedRectangle(cornerRadius: Constants.radius)
       .fill(Color.secondary)
@@ -148,9 +146,9 @@ struct BottomSheetView<Content: View>: View {
         height: Constants.indicatorHeight
       )
   }
-  
+
   @GestureState private var translation: CGFloat = 0
-  
+
   var body: some View {
     GeometryReader { geometry in
       VStack(spacing: 0) {

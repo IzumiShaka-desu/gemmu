@@ -12,7 +12,6 @@ class HomeViewController: ObservableObject {
   @Published var data: [GameItem] = []
   var nextPage: String?
   let dataProvider: GamesDataProvider = GamesDataProvider()
-  
   func fetchItems() {
     if data.isEmpty {
       self.isLoading=true
