@@ -4,8 +4,6 @@
 //
 //  Created by Akashaka on 09/02/22.
 //
-
-import Foundation
 struct GameItem: Codable {
     let id: Int
     let slug, name, released: String?

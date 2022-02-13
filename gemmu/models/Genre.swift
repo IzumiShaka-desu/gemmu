@@ -4,8 +4,6 @@
 //
 //  Created by Akashaka on 09/02/22.
 //
-
-import Foundation
 struct Genre: Codable {
     let id: Int
     let name, slug: String

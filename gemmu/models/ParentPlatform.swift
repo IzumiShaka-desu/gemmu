@@ -4,8 +4,6 @@
 //
 //  Created by Akashaka on 09/02/22.
 //
-
-import Foundation
 struct ParentPlatform: Codable {
     let platform: EsrbRating
 }

@@ -44,21 +44,24 @@ struct ItemList: View {
                             .padding(.bottom, 5).foregroundColor(.white)
                         
                         HStack(alignment: .center) {
-                            ForEach(platforms, id: \.self) { platform in                                TagsCard(text: platform, bgColor: Color.pink)
+                          ForEach(platforms, id: \.self) { platform in                                TagsCard(text: platform, bgColor: .green)
                             }
                         }
                         .padding(.bottom, 5)
                         
                         HStack {
                             ForEach(genres, id: \.self) { genre in
-                                TagsCard(text: genre)
+                              TagsCard(text: genre,bgColor: .pink)
                             }
                         }
                         
                     }
                     .padding(.horizontal, 5)
                     
-                }).padding(0).buttonStyle(PlainButtonStyle())
+                }
+                )
+                .padding(0)
+                .buttonStyle(PlainButtonStyle())
             }
             .padding(15)
         }        .clipShape(RoundedRectangle(cornerRadius: 15))

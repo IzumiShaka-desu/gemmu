@@ -5,4 +5,13 @@
 //  Created by Akashaka on 12/02/22.
 //
 
-import Foundation
+import RealmSwift
+
+class FavoriteGame: Object,Identifiable{
+  @Persisted(primaryKey: true) var _id: Int
+  @Persisted var name: String
+  @Persisted var imageUrl: String
+  @Persisted var genres: List<String>
+  @Persisted var releaseDate: String
+  @Persisted var rank: String
+}

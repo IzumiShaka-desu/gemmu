@@ -4,10 +4,6 @@
 //
 //  Created by Akashaka on 09/02/22.
 //
-
-import Foundation
-import Alamofire
-
 // MARK: - GamesResponse
 struct GamesResponse: Codable {
     let count: Int

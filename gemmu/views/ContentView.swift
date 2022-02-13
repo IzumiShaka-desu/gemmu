@@ -17,7 +17,6 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.flatWhiteBackground.ignoresSafeArea(.all)
-
             NavigationView {
                 TabView {
                     ZStack(alignment: .top) {
@@ -34,6 +33,13 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass.circle")
                         Text("Search")
                     }
+                  ZStack {
+                      Color.flatDarkBackground.ignoresSafeArea()
+                    FavoriteView().accentColor(Color.white)
+                  }.tabItem {
+                      Image(systemName: "star.circle.fill")
+                      Text("Favourite")
+                  }
                 }.accentColor(Color.flatWhiteBackground).navigationTitle("Game Store").navigationBarTitleDisplayMode(.inline).toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink(destination: AboutPageView(), label: {
