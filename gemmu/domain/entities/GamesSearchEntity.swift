@@ -5,4 +5,7 @@
 //  Created by Akashaka on 18/02/22.
 //
 
-import Foundation
+struct GamesSearchEntity: Equatable {
+  let next: String
+  let results: [SearchItemResultEntity]
+}
