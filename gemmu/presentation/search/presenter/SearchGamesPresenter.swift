@@ -11,7 +11,7 @@ import Combine
 class SearchGamesPresenter: ObservableObject {
 
   private var cancellables: Set<AnyCancellable> = []
-//  private let router = SearchRouter()
+  private let router: SearchRouter
   private let searchUseCase: SearchGamesUseCase
 
   @Published var results: [SearchItemResultEntity] = []
@@ -20,11 +20,12 @@ class SearchGamesPresenter: ObservableObject {
   @Published var isError: Bool = false
   @Published var query = ""
   
-  init(searchUseCase: SearchGamesUseCase) {
+  init(searchUseCase: SearchGamesUseCase, router: SearchRouter) {
     self.searchUseCase = searchUseCase
+    self.router = router
   }
 
-  func searchMeal() {
+  func searchGames() {
     isLoading = true
     searchUseCase.searchGames(for: query)
       .receive(on: RunLoop.main)
@@ -43,12 +44,14 @@ class SearchGamesPresenter: ObservableObject {
       .store(in: &cancellables)
   }
 
-//  func linkBuilder<Content: View>(
-//    for meal: MealModel,
-//    @ViewBuilder content: () -> Content
-//  ) -> some View {
-//    NavigationLink(
-//      destination: router.makeMealView(for: meal)) { content() }
-//  }
+  func linkBuilder<Content: View>(
+    for id: Int,
+    @ViewBuilder content: () -> Content
+  ) -> some View {
+    NavigationLink(
+      destination: router.makeDetailView(for: id)) { content() }
+    .padding(0)
+    .buttonStyle(PlainButtonStyle())
+  }
 
 }
