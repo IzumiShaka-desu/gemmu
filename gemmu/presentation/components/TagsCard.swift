@@ -16,6 +16,7 @@ struct TagsCard: View {
             Text(text)
                 .font(.system(size: fontSize, weight: .regular))
                 .lineLimit(2)
+                .frame(minWidth: 20, maxWidth: 64, alignment: .center)
                 .foregroundColor(.white)
                 .padding(5)
                 .background(bgColor)
