@@ -44,6 +44,15 @@ struct Platform: Codable {
     let platform: GenreItem
 }
 extension SearchItemResult {
+  func toEntity() -> SearchItemResultEntity {
+    return SearchItemResultEntity(
+      id: self.id,
+      name: self.name ,
+      imageUrl: self.backgroundImage ?? "",
+      released: self.released ?? "",
+      genres: self.extractGenreName()
+    )
+  }
     func extractPlatformsName() -> [String] {
         var results: [String]=[]
         for platform in self.platforms {
