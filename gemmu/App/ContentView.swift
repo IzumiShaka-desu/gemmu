@@ -28,7 +28,8 @@ struct ContentView: View {
           ZStack(alignment: .top) {
            
             Color.flatDarkBackground.ignoresSafeArea()
-            HomeView(presenter: Injectors.sharedInstance.homePresenter).accentColor(Color.white)
+            HomeView(presenter: Injectors.sharedInstance.homePresenter)
+              .accentColor(Color.white)
           }.tabItem {
             Label("Home", systemImage: "house.circle")
           }
@@ -42,7 +43,8 @@ struct ContentView: View {
           }
           ZStack {
             Color.flatDarkBackground.ignoresSafeArea()
-            FavoriteView().accentColor(Color.white)
+            FavoriteView(presenter: Injectors.sharedInstance.favoritePresenter)
+              .accentColor(Color.white)
           }.tabItem {
             Image(systemName: "star.circle.fill")
             Text("Favourite")
