@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "DIContainer",
+        "repositoryURL": "https://github.com/Tavernari/DIContainer.git",
+        "state": {
+          "branch": null,
+          "revision": "5018ea682ce747104879c05a7f5cade7fe4d1535",
+          "version": "0.2.1"
+        }
+      },
+      {
         "package": "NetworkImage",
         "repositoryURL": "https://github.com/gonzalezreal/NetworkImage",
         "state": {
