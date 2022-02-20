@@ -16,67 +16,70 @@ struct AboutPageView: View {
     suiteName: "group.DarkshanDev.userdefaults")) private var position: String?
   @AppStorage("imageUrl", store: UserDefaults(
     suiteName: "group.DarkshanDev.userdefaults")) private  var imageUrl: String?
-
+  
   var body: some View {
-    GeometryReader { geometry in
-      HStack(alignment: .center) {
-        Spacer()
-        VStack {
+    ZStack {
+      Color.flatDarkBackground.ignoresSafeArea()
+      GeometryReader { geometry in
+        HStack(alignment: .center) {
           Spacer()
-          Text("About me")
-            .font(.title)
-          NetworkImage(url: URL(string: imageUrl ?? Constants.profileImageUrl)) { image in
-            image.resizable()
-          } placeholder: {
-            ProgressView()
-          } fallback: {
-            Image(systemName: "photo")
-
-          }
-          .frame(width: 150, height: 150)
-          .clipped()
-          .background().cornerRadius(10)
-          Text(username ?? Constants.profileName)
-          Text(position ?? Constants.positionName)
-          Button(
-            action: {
-              self.bottomSheetShown =  true
-            },
-            label: {
-              Image(systemName: "pencil.circle")
-              Text("Update user profile")
+          VStack {
+            Spacer()
+            Text("About me")
+              .font(.title)
+            NetworkImage(url: URL(string: imageUrl ?? Constants.profileImageUrl)) { image in
+              image.resizable()
+            } placeholder: {
+              ProgressView()
+            } fallback: {
+              Image(systemName: "photo")
+              
             }
-          )
-          Spacer()
-          Spacer()
+            .frame(width: 150, height: 150)
+            .clipped()
+            .background().cornerRadius(10)
+            Text(username ?? Constants.profileName)
+            Text(position ?? Constants.positionName)
+            Button(
+              action: {
+                self.bottomSheetShown =  true
+              },
+              label: {
+                Image(systemName: "pencil.circle")
+                Text("Update user profile")
+              }
+            )
+            Spacer()
+            Spacer()
+            Spacer()
+          }
           Spacer()
         }
-        Spacer()
-      }
-      BottomSheetView(
-        isOpen: self.$bottomSheetShown,
-        maxHeight: geometry.size.height * 0.7
-
-      ) {
-        ProfileFormView(
-          username: username ?? "",
-          position: position ?? "",
-          imageUrl: imageUrl ?? "", onSubmit: {username, position, imageUrl in
-            let storage = UserDefaults(
-              suiteName: "group.DarkshanDev.userdefaults"
-            )
-            storage?.set(username, forKey: "name")
-            storage?.set(position, forKey: "position")
-            storage?.set(imageUrl, forKey: "imageUrl")
-            self.bottomSheetShown =  false
-            self.updater.toggle()
-          }
-        )
-      }
-    }.edgesIgnoringSafeArea(.all)
-
+        BottomSheetView(
+          isOpen: self.$bottomSheetShown,
+          maxHeight: geometry.size.height * 0.7
+          
+        ) {
+          ProfileFormView(
+            username: username ?? "",
+            position: position ?? "",
+            imageUrl: imageUrl ?? "", onSubmit: {username, position, imageUrl in
+              let storage = UserDefaults(
+                suiteName: "group.DarkshanDev.userdefaults"
+              )
+              storage?.set(username, forKey: "name")
+              storage?.set(position, forKey: "position")
+              storage?.set(imageUrl, forKey: "imageUrl")
+              self.bottomSheetShown =  false
+              self.updater.toggle()
+            }
+          )
+        }
+      }.edgesIgnoringSafeArea(.all)
+    }
   }
 }
+
 struct ProfileFormView: View {
   @State  var username = ""
   @State  var position = ""
@@ -115,19 +118,19 @@ struct ProfileFormView: View {
           Image(systemName: "pencil.circle")
           Text("Update user profile")
         })
-
+      
     }
-
+    
   }
 }
 
 struct BottomSheetView<Content: View>: View {
   @Binding var isOpen: Bool
-
+  
   let maxHeight: CGFloat
   let minHeight: CGFloat
   let content: Content
-
+  
   init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
     self.minHeight = maxHeight * Constants.minHeightRatio
     self.maxHeight = maxHeight
@@ -137,7 +140,7 @@ struct BottomSheetView<Content: View>: View {
   private var offset: CGFloat {
     isOpen ? 0 : maxHeight - minHeight
   }
-
+  
   private var indicator: some View {
     RoundedRectangle(cornerRadius: Constants.radius)
       .fill(Color.secondary)
@@ -146,9 +149,9 @@ struct BottomSheetView<Content: View>: View {
         height: Constants.indicatorHeight
       )
   }
-
+  
   @GestureState private var translation: CGFloat = 0
-
+  
   var body: some View {
     GeometryReader { geometry in
       VStack(spacing: 0) {
