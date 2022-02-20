@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct SearchView: View {
-  @ObservedObject var controller: SearchViewController = SearchViewController.instance
-
+  @ObservedObject var presenter: SearchGamesPresenter
   @State private var isEditing = false
-
+  init(presenter: SearchGamesPresenter) {
+    self.presenter=presenter
+  }
   var body: some View {
     ZStack(alignment: .top) {
       VStack {
         HStack(alignment: .top) {
-          TextField("Search ...", text: $controller.query )
+          TextField("Search ...", text: $presenter.query )
             .padding(7)
             .padding(.horizontal, 25)
             .background(Color(.systemGray6))
@@ -28,7 +29,7 @@ struct SearchView: View {
           if isEditing {
             HStack {
               Button {
-                self.controller.executeSearch()
+                self.presenter.searchGames()
               }
               label: {
                 Image(systemName: "magnifyingglass.circle")
@@ -36,7 +37,7 @@ struct SearchView: View {
               }
               Button {
                 self.isEditing = false
-                self.controller.query = ""
+                self.presenter.query = ""
               }
               label: {
                 Text("Cancel")
@@ -49,22 +50,26 @@ struct SearchView: View {
         ZStack(alignment: .top) {
           Color.flatDarkBackground.ignoresSafeArea()
           VStack {
-            if self.controller.isLoading {
+            if self.presenter.isLoading {
               ProgressView().padding(16)
             } else {
-              if let games=controller.searchResult?.results {
+              if let games=presenter.results {
                 List(games, id: \.id) {item in
-                  ItemList(
-                    title: item.name,
-                    releaseDate: item.released ?? "",
-                    platforms: [],
-                    genres: item.extractGenreName(),
-                    imageUrl: item.backgroundImage ?? "",
-                    id: item.id
-                  ).frame(
-                    width: .infinity,
-                    height: 150
-                  ).listRowBackground(Color.flatDarkBackground)
+                  presenter.linkBuilder(for: item.id) {
+                    ItemList(
+                     title: item.name,
+                     releaseDate: item.released,
+                     platforms: [],
+                     genres: item.genres,
+                     imageUrl: item.imageUrl,
+                     id: item.id
+                   ).frame(
+                     width: .infinity,
+                     height: 150
+                   )
+                  }
+                  .listRowBackground(Color.flatDarkBackground)
+                  
                 }
               } else {
                 Text("Search result empty")
@@ -78,7 +83,11 @@ struct SearchView: View {
 }
 
 struct SearchView_Previews: PreviewProvider {
+  init() {
+    Injectors.sharedInstance.inject()
+  }
+
   static var previews: some View {
-    SearchView()
+        SearchView(presenter: Injectors.sharedInstance.searchPresenter)
   }
 }
