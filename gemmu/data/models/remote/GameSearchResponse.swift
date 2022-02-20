@@ -5,7 +5,6 @@
 //  Created by Akashaka on 11/02/22.
 //
 
-import Foundation
 struct GamesSearchResponse: Codable {
     let count: Int
     let next: String
@@ -16,4 +15,9 @@ struct GamesSearchResponse: Codable {
         case count, next, results
         case userPlatforms = "user_platforms"
     }
+}
+extension GamesSearchResponse {
+  func toEntity() -> GamesSearchEntity {
+    return GamesSearchEntity(next: self.next, results: self.results.map({$0.toEntity()}))
+  }
 }
