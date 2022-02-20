@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GemmuApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  init() {
+    Injectors.sharedInstance.inject()
+  }
+  var body: some Scene {
+    WindowGroup {
+     ContentView()
     }
+  }
 }
