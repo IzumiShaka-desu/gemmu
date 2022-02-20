@@ -10,8 +10,7 @@ import Alamofire
 
 struct HomeView: View {
   @ObservedObject  var homePresenter: HomePresenter
-
-//  @ObservedObject var controller: HomeViewController = HomeViewController.instance
+  
   init(presenter: HomePresenter) {
     self.homePresenter = presenter
     UITableView.appearance().separatorStyle = .none
@@ -29,57 +28,66 @@ struct HomeView: View {
                 width: 50,
                 height: 50,
                 alignment: .center
-              )          }
+              )
+          }.onAppear {
+            homePresenter.getGames()
+          }
           .frame(
             width: .infinity,
             height: .infinity,
             alignment: .center
           )
         } else {
-          List(homePresenter.games, id: \.id) {item in
-            ItemList(
-              title: item.name,
-              releaseDate: item.released,
-              platforms: [],
-              genres: item.genres,
-              imageUrl: item.imageUrl,
-              id: item.id
-            ).frame(
-              width: .infinity,
-              height: 150
-            ).listRowBackground(Color.flatDarkBackground)
-
-            if homePresenter.games.last?.id==item.id { if(homePresenter.next?.count ?? 1)>29 {
-              ZStack(alignment: .center) {
-                Color.flatDarkCardBackground
-                Text("Loading...")
-                  .foregroundColor(.white)
-                  .onAppear {
-                    homePresenter.getGames()
-                  }
-              }.listRowBackground(Color.flatDarkBackground)
-
-            } else {
-              ZStack(alignment: .center) {
-                Color.flatDarkCardBackground
-                Text("end of list")
-                  .foregroundColor(.white)
-              }.listRowBackground(Color.flatDarkBackground)
-            }
+          if homePresenter.isError {
+            Text(homePresenter.errorMessage)
+              .font(.headline)
+          } else {
+           List(homePresenter.games, id: \.id) {item in
+             homePresenter.linkBuilder(for: item.id) {
+               ItemList(
+                title: item.name,
+                releaseDate: item.released,
+                platforms: [],
+                genres: item.genres,
+                imageUrl: item.imageUrl,
+                id: item.id
+              ).frame(
+                width: .infinity,
+                height: 150
+              )
+             }.listRowBackground(Color.flatDarkBackground)
+            if homePresenter.games.last?.id==item.id {
+              if(homePresenter.next?.count ?? 1)>29 {
+                ZStack(alignment: .center) {
+                  Color.flatDarkCardBackground
+                  Text("Loading...")
+                    .foregroundColor(.white)
+                    .onAppear {
+                      homePresenter.getGames()
+                    }
+                }.listRowBackground(Color.flatDarkBackground)
+                
+              } else {
+                ZStack(alignment: .center) {
+                  Color.flatDarkCardBackground
+                  Text("end of list")
+                    .foregroundColor(.white)
+                }.listRowBackground(Color.flatDarkBackground)
+              }
             }
           }
+           
+         }
         }
-      }.onAppear {
-        homePresenter.getGames()
       }
-
+      
     }.padding(0)
   }
 }
 
 struct HomeView_Previews: PreviewProvider {
   init() {
-    inject()
+    Injectors.sharedInstance.inject()
   }
   static var previews: some View {
     
