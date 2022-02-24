@@ -444,6 +444,7 @@
 		BAE2BA4027C0EA1D00B27E08 /* about */ = {
 			isa = PBXGroup;
 			children = (
+				BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */,
 				BAE2BA4227C0EA3300B27E08 /* about */,
 			);
 			path = about;
@@ -452,7 +453,6 @@
 		BAE2BA4227C0EA3300B27E08 /* about */ = {
 			isa = PBXGroup;
 			children = (
-				BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */,
 			);
 			path = about;
 			sourceTree = "<group>";
