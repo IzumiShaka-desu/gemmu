@@ -6,13 +6,9 @@
 //
 
 import SwiftUI
-import DIContainer
-
+import About
 struct ContentView: View {
-  //  @Injected(.githubService)
-  //  var githubService: FetchService
-  //  @EnvironmentObject var favoritePresenter: FavoritePresenter
-  
+
   init() {
     UITabBar.appearance().backgroundColor = UIColor.flatDarkBackground
     UINavigationBar.appearance().backgroundColor = UIColor.flatDarkBackground
@@ -55,7 +51,7 @@ struct ContentView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
           ToolbarItem(placement: .navigationBarTrailing) {
-            NavigationLink(destination: AboutPageView(), label: {
+            NavigationLink(destination: AboutView(), label: {
               HStack {
                 Image(systemName: "info.circle").imageScale(.medium)
                 Text("About")

@@ -36,13 +36,9 @@ protocol Endpoint {
 enum Endpoints {
   enum Gets: Endpoint {
     case games
-//    case search
     public var url: String {
       switch self {
-//      case .categories: return "\(API.baseUrl)categories.php"
       case .games: return "\(API.baseUrl)games"
-//      case .meal: return "\(API.baseUrl)lookup.php?i="
-//      case .search: return "\(API.baseUrl)games.php?s="
       }
     }
   }

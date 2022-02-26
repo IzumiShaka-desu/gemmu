@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "About",
+        "repositoryURL": "https://github.com/IzumiShaka-desu/About-gemmu.git",
+        "state": {
+          "branch": "main",
+          "revision": "d438407993b7538fecb1b8f158bb73bfeef8a0e1",
+          "version": null
+        }
+      },
+      {
         "package": "Alamofire",
         "repositoryURL": "https://github.com/Alamofire/Alamofire",
         "state": {
@@ -17,6 +26,15 @@
           "branch": null,
           "revision": "4cf088c29a20f52be0f2ca54992b492c54e0076b",
           "version": "0.5.3"
+        }
+      },
+      {
+        "package": "Common",
+        "repositoryURL": "https://github.com/IzumiShaka-desu/Common.git",
+        "state": {
+          "branch": "main",
+          "revision": "1e54d47193cd3d39757f1985e2bd59e667d3aa26",
+          "version": null
         }
       },
       {
@@ -42,8 +60,8 @@
         "repositoryURL": "https://github.com/exyte/PopupView.git",
         "state": {
           "branch": null,
-          "revision": "5c9c05dfce24b99311c53bda4fac2f7aec2eb3c7",
-          "version": "1.0.5"
+          "revision": "77c04cef5651a07ab795f8b4edeb39cb231b2411",
+          "version": "1.0.7"
         }
       },
       {

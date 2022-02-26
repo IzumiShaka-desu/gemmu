@@ -49,6 +49,8 @@
 		BAAB7CF427B7DE8F0040AA20 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BAAB7CF327B7DE8F0040AA20 /* Realm */; };
 		BAAB7CF627B7DE8F0040AA20 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BAAB7CF527B7DE8F0040AA20 /* RealmSwift */; };
 		BAAB7D0227B876010040AA20 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = BAAB7D0127B876010040AA20 /* PopupView */; };
+		BADDF9F227C79506000964C6 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = BADDF9F127C79506000964C6 /* Common */; };
+		BADDF9F527C7B6F4000964C6 /* About in Frameworks */ = {isa = PBXBuildFile; productRef = BADDF9F427C7B6F4000964C6 /* About */; };
 		BAE2BA0E27BF3FA600B27E08 /* GamesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2BA0D27BF3FA600B27E08 /* GamesRepository.swift */; };
 		BAE2BA1227BF43C300B27E08 /* GamesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2BA1127BF43C300B27E08 /* GamesEntity.swift */; };
 		BAE2BA1427BF467400B27E08 /* GamesSearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2BA1327BF467400B27E08 /* GamesSearchEntity.swift */; };
@@ -157,10 +159,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDF9F527C7B6F4000964C6 /* About in Frameworks */,
 				BAAB7D0227B876010040AA20 /* PopupView in Frameworks */,
 				BAE2BA3227C0C09300B27E08 /* DIContainer in Frameworks */,
 				BAAB7CF627B7DE8F0040AA20 /* RealmSwift in Frameworks */,
 				BAAB7CF427B7DE8F0040AA20 /* Realm in Frameworks */,
+				BADDF9F227C79506000964C6 /* Common in Frameworks */,
 				BAA3C1C827B3B9FC001F7B5B /* NetworkImage in Frameworks */,
 				BAA3C1CD27B3BC98001F7B5B /* Alamofire in Frameworks */,
 			);
@@ -445,14 +449,6 @@
 			isa = PBXGroup;
 			children = (
 				BAA3C1C427B3B9D4001F7B5B /* AboutPageView.swift */,
-				BAE2BA4227C0EA3300B27E08 /* about */,
-			);
-			path = about;
-			sourceTree = "<group>";
-		};
-		BAE2BA4227C0EA3300B27E08 /* about */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = about;
 			sourceTree = "<group>";
@@ -602,6 +598,8 @@
 				BAAB7CF527B7DE8F0040AA20 /* RealmSwift */,
 				BAAB7D0127B876010040AA20 /* PopupView */,
 				BAE2BA3127C0C09300B27E08 /* DIContainer */,
+				BADDF9F127C79506000964C6 /* Common */,
+				BADDF9F427C7B6F4000964C6 /* About */,
 			);
 			productName = gemmu;
 			productReference = BAA3C18D27B39C36001F7B5B /* Gemmu.app */;
@@ -681,6 +679,8 @@
 				BAAB7CF227B7DE8F0040AA20 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				BAAB7D0027B876010040AA20 /* XCRemoteSwiftPackageReference "PopupView" */,
 				BAE2BA3027C0C09300B27E08 /* XCRemoteSwiftPackageReference "DIContainer" */,
+				BADDF9F027C79505000964C6 /* XCRemoteSwiftPackageReference "Common" */,
+				BADDF9F327C7B6F4000964C6 /* XCRemoteSwiftPackageReference "About-gemmu" */,
 			);
 			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
 			projectDirPath = "";
@@ -1157,6 +1157,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		BADDF9F027C79505000964C6 /* XCRemoteSwiftPackageReference "Common" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IzumiShaka-desu/Common.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BADDF9F327C7B6F4000964C6 /* XCRemoteSwiftPackageReference "About-gemmu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IzumiShaka-desu/About-gemmu.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		BAE2BA3027C0C09300B27E08 /* XCRemoteSwiftPackageReference "DIContainer" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Tavernari/DIContainer.git";
@@ -1192,6 +1208,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BAAB7D0027B876010040AA20 /* XCRemoteSwiftPackageReference "PopupView" */;
 			productName = PopupView;
+		};
+		BADDF9F127C79506000964C6 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BADDF9F027C79505000964C6 /* XCRemoteSwiftPackageReference "Common" */;
+			productName = Common;
+		};
+		BADDF9F427C7B6F4000964C6 /* About */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BADDF9F327C7B6F4000964C6 /* XCRemoteSwiftPackageReference "About-gemmu" */;
+			productName = About;
 		};
 		BAE2BA3127C0C09300B27E08 /* DIContainer */ = {
 			isa = XCSwiftPackageProductDependency;
