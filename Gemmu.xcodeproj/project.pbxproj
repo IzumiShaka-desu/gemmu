@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BA70DAD427CCCCC20010C7F5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70DAD327CCCCC20010C7F5 /* Router.swift */; };
+		BA70DAD727CD178D0010C7F5 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD627CD178D0010C7F5 /* Home */; };
+		BA70DADA27CD17E40010C7F5 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD927CD17E40010C7F5 /* Search */; };
+		BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DADC27CD17F80010C7F5 /* Favorite */; };
 		BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19027B39C36001F7B5B /* gemmuApp.swift */; };
 		BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19227B39C36001F7B5B /* ContentView.swift */; };
 		BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19427B39C38001F7B5B /* Assets.xcassets */; };
@@ -74,7 +77,10 @@
 				BADDF9F527C7B6F4000964C6 /* About in Frameworks */,
 				BAC6078327CC5E9000DC243E /* Search in Frameworks */,
 				BAE2BA3227C0C09300B27E08 /* DIContainer in Frameworks */,
+				BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */,
 				BAC6078127CC5E8900DC243E /* Home in Frameworks */,
+				BA70DADA27CD17E40010C7F5 /* Search in Frameworks */,
+				BA70DAD727CD178D0010C7F5 /* Home in Frameworks */,
 				BADDF9F227C79506000964C6 /* Common in Frameworks */,
 				BAC6078627CC5F0400DC243E /* Detail in Frameworks */,
 			);
@@ -234,6 +240,9 @@
 				BAC6078027CC5E8900DC243E /* Home */,
 				BAC6078227CC5E9000DC243E /* Search */,
 				BAC6078527CC5F0400DC243E /* Detail */,
+				BA70DAD627CD178D0010C7F5 /* Home */,
+				BA70DAD927CD17E40010C7F5 /* Search */,
+				BA70DADC27CD17F80010C7F5 /* Favorite */,
 			);
 			productName = gemmu;
 			productReference = BAA3C18D27B39C36001F7B5B /* Gemmu.app */;
@@ -312,6 +321,9 @@
 				BADDF9F027C79505000964C6 /* XCRemoteSwiftPackageReference "Common" */,
 				BADDF9F327C7B6F4000964C6 /* XCRemoteSwiftPackageReference "About-gemmu" */,
 				BAC6078427CC5F0400DC243E /* XCRemoteSwiftPackageReference "Detail" */,
+				BA70DAD527CD178D0010C7F5 /* XCRemoteSwiftPackageReference "Home" */,
+				BA70DAD827CD17E40010C7F5 /* XCRemoteSwiftPackageReference "Search" */,
+				BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */,
 			);
 			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
 			projectDirPath = "";
@@ -711,6 +723,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BA70DAD527CD178D0010C7F5 /* XCRemoteSwiftPackageReference "Home" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IzumiShaka-desu/Home.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BA70DAD827CD17E40010C7F5 /* XCRemoteSwiftPackageReference "Search" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IzumiShaka-desu/Search.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IzumiShaka-desu/Favorite.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		BAC6078427CC5F0400DC243E /* XCRemoteSwiftPackageReference "Detail" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IzumiShaka-desu/Detail.git";
@@ -746,6 +782,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BA70DAD627CD178D0010C7F5 /* Home */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA70DAD527CD178D0010C7F5 /* XCRemoteSwiftPackageReference "Home" */;
+			productName = Home;
+		};
+		BA70DAD927CD17E40010C7F5 /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA70DAD827CD17E40010C7F5 /* XCRemoteSwiftPackageReference "Search" */;
+			productName = Search;
+		};
+		BA70DADC27CD17F80010C7F5 /* Favorite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */;
+			productName = Favorite;
+		};
 		BAC6077E27CC5E8300DC243E /* Favorite */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Favorite;
