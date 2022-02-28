@@ -7,11 +7,17 @@
 
 import SwiftUI
 import About
+import Common
+import Home
+import Search
+import Detail
+import Favorite
+
 struct ContentView: View {
 
   init() {
-    UITabBar.appearance().backgroundColor = UIColor.flatDarkBackground
-    UINavigationBar.appearance().backgroundColor = UIColor.flatDarkBackground
+    UITabBar.appearance().backgroundColor = UIColor(.flatDarkBackground)
+  UINavigationBar.appearance().backgroundColor = UIColor(.flatDarkBackground)
     
   }
   
@@ -24,7 +30,7 @@ struct ContentView: View {
           ZStack(alignment: .top) {
            
             Color.flatDarkBackground.ignoresSafeArea()
-            HomeView(presenter: Injectors.sharedInstance.homePresenter)
+            HomeView<DetailGameView>(presenter: Injectors.sharedInstance.homePresenter)
               .accentColor(Color.white)
           }.tabItem {
             Label("Home", systemImage: "house.circle")
@@ -32,14 +38,14 @@ struct ContentView: View {
           
           ZStack {
             Color.flatDarkBackground.ignoresSafeArea()
-            SearchView(presenter: Injectors.sharedInstance.searchPresenter)
+            SearchView<DetailGameView>(presenter: Injectors.sharedInstance.searchPresenter)
           }.tabItem {
             Image(systemName: "magnifyingglass.circle")
             Text("Search")
           }
           ZStack {
             Color.flatDarkBackground.ignoresSafeArea()
-            FavoriteView(presenter: Injectors.sharedInstance.favoritePresenter)
+            FavoriteView<DetailGameView>(presenter: Injectors.sharedInstance.favoritePresenter)
               .accentColor(Color.white)
           }.tabItem {
             Image(systemName: "star.circle.fill")
