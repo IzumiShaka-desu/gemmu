@@ -11,7 +11,7 @@
 		BA70DAD727CD178D0010C7F5 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD627CD178D0010C7F5 /* Home */; };
 		BA70DADA27CD17E40010C7F5 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD927CD17E40010C7F5 /* Search */; };
 		BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DADC27CD17F80010C7F5 /* Favorite */; };
-		BA70DAE027CD1D4A0010C7F5 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DADF27CD1D4A0010C7F5 /* Detail */; };
+		BA70DAE327CD22030010C7F5 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAE227CD22030010C7F5 /* Detail */; };
 		BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19027B39C36001F7B5B /* gemmuApp.swift */; };
 		BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19227B39C36001F7B5B /* ContentView.swift */; };
 		BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19427B39C38001F7B5B /* Assets.xcassets */; };
@@ -78,7 +78,7 @@
 				BAC6078327CC5E9000DC243E /* Search in Frameworks */,
 				BAE2BA3227C0C09300B27E08 /* DIContainer in Frameworks */,
 				BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */,
-				BA70DAE027CD1D4A0010C7F5 /* Detail in Frameworks */,
+				BA70DAE327CD22030010C7F5 /* Detail in Frameworks */,
 				BAC6078127CC5E8900DC243E /* Home in Frameworks */,
 				BA70DADA27CD17E40010C7F5 /* Search in Frameworks */,
 				BA70DAD727CD178D0010C7F5 /* Home in Frameworks */,
@@ -242,7 +242,7 @@
 				BA70DAD627CD178D0010C7F5 /* Home */,
 				BA70DAD927CD17E40010C7F5 /* Search */,
 				BA70DADC27CD17F80010C7F5 /* Favorite */,
-				BA70DADF27CD1D4A0010C7F5 /* Detail */,
+				BA70DAE227CD22030010C7F5 /* Detail */,
 			);
 			productName = gemmu;
 			productReference = BAA3C18D27B39C36001F7B5B /* Gemmu.app */;
@@ -323,7 +323,7 @@
 				BA70DAD527CD178D0010C7F5 /* XCRemoteSwiftPackageReference "Home" */,
 				BA70DAD827CD17E40010C7F5 /* XCRemoteSwiftPackageReference "Search" */,
 				BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */,
-				BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */,
+				BA70DAE127CD22030010C7F5 /* XCRemoteSwiftPackageReference "Detail" */,
 			);
 			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
 			projectDirPath = "";
@@ -747,7 +747,7 @@
 				kind = branch;
 			};
 		};
-		BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */ = {
+		BA70DAE127CD22030010C7F5 /* XCRemoteSwiftPackageReference "Detail" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IzumiShaka-desu/Detail.git";
 			requirement = {
@@ -797,9 +797,9 @@
 			package = BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */;
 			productName = Favorite;
 		};
-		BA70DADF27CD1D4A0010C7F5 /* Detail */ = {
+		BA70DAE227CD22030010C7F5 /* Detail */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */;
+			package = BA70DAE127CD22030010C7F5 /* XCRemoteSwiftPackageReference "Detail" */;
 			productName = Detail;
 		};
 		BAC6077E27CC5E8300DC243E /* Favorite */ = {
