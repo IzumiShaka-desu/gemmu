@@ -11,6 +11,7 @@
 		BA70DAD727CD178D0010C7F5 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD627CD178D0010C7F5 /* Home */; };
 		BA70DADA27CD17E40010C7F5 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DAD927CD17E40010C7F5 /* Search */; };
 		BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DADC27CD17F80010C7F5 /* Favorite */; };
+		BA70DAE027CD1D4A0010C7F5 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = BA70DADF27CD1D4A0010C7F5 /* Detail */; };
 		BAA3C19127B39C36001F7B5B /* gemmuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19027B39C36001F7B5B /* gemmuApp.swift */; };
 		BAA3C19327B39C36001F7B5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA3C19227B39C36001F7B5B /* ContentView.swift */; };
 		BAA3C19527B39C38001F7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C19427B39C38001F7B5B /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		BAC6077F27CC5E8300DC243E /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = BAC6077E27CC5E8300DC243E /* Favorite */; };
 		BAC6078127CC5E8900DC243E /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = BAC6078027CC5E8900DC243E /* Home */; };
 		BAC6078327CC5E9000DC243E /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = BAC6078227CC5E9000DC243E /* Search */; };
-		BAC6078627CC5F0400DC243E /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = BAC6078527CC5F0400DC243E /* Detail */; };
 		BADDF9F227C79506000964C6 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = BADDF9F127C79506000964C6 /* Common */; };
 		BADDF9F527C7B6F4000964C6 /* About in Frameworks */ = {isa = PBXBuildFile; productRef = BADDF9F427C7B6F4000964C6 /* About */; };
 		BAE2BA1827BF7AC400B27E08 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAE2BA1727BF7AC400B27E08 /* .swiftlint.yml */; };
@@ -78,11 +78,11 @@
 				BAC6078327CC5E9000DC243E /* Search in Frameworks */,
 				BAE2BA3227C0C09300B27E08 /* DIContainer in Frameworks */,
 				BA70DADD27CD17F80010C7F5 /* Favorite in Frameworks */,
+				BA70DAE027CD1D4A0010C7F5 /* Detail in Frameworks */,
 				BAC6078127CC5E8900DC243E /* Home in Frameworks */,
 				BA70DADA27CD17E40010C7F5 /* Search in Frameworks */,
 				BA70DAD727CD178D0010C7F5 /* Home in Frameworks */,
 				BADDF9F227C79506000964C6 /* Common in Frameworks */,
-				BAC6078627CC5F0400DC243E /* Detail in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,10 +239,10 @@
 				BAC6077E27CC5E8300DC243E /* Favorite */,
 				BAC6078027CC5E8900DC243E /* Home */,
 				BAC6078227CC5E9000DC243E /* Search */,
-				BAC6078527CC5F0400DC243E /* Detail */,
 				BA70DAD627CD178D0010C7F5 /* Home */,
 				BA70DAD927CD17E40010C7F5 /* Search */,
 				BA70DADC27CD17F80010C7F5 /* Favorite */,
+				BA70DADF27CD1D4A0010C7F5 /* Detail */,
 			);
 			productName = gemmu;
 			productReference = BAA3C18D27B39C36001F7B5B /* Gemmu.app */;
@@ -320,10 +320,10 @@
 				BAE2BA3027C0C09300B27E08 /* XCRemoteSwiftPackageReference "DIContainer" */,
 				BADDF9F027C79505000964C6 /* XCRemoteSwiftPackageReference "Common" */,
 				BADDF9F327C7B6F4000964C6 /* XCRemoteSwiftPackageReference "About-gemmu" */,
-				BAC6078427CC5F0400DC243E /* XCRemoteSwiftPackageReference "Detail" */,
 				BA70DAD527CD178D0010C7F5 /* XCRemoteSwiftPackageReference "Home" */,
 				BA70DAD827CD17E40010C7F5 /* XCRemoteSwiftPackageReference "Search" */,
 				BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */,
+				BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */,
 			);
 			productRefGroup = BAA3C18E27B39C36001F7B5B /* Products */;
 			projectDirPath = "";
@@ -747,7 +747,7 @@
 				kind = branch;
 			};
 		};
-		BAC6078427CC5F0400DC243E /* XCRemoteSwiftPackageReference "Detail" */ = {
+		BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/IzumiShaka-desu/Detail.git";
 			requirement = {
@@ -797,6 +797,11 @@
 			package = BA70DADB27CD17F80010C7F5 /* XCRemoteSwiftPackageReference "Favorite" */;
 			productName = Favorite;
 		};
+		BA70DADF27CD1D4A0010C7F5 /* Detail */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA70DADE27CD1D4A0010C7F5 /* XCRemoteSwiftPackageReference "Detail" */;
+			productName = Detail;
+		};
 		BAC6077E27CC5E8300DC243E /* Favorite */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Favorite;
@@ -808,11 +813,6 @@
 		BAC6078227CC5E9000DC243E /* Search */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Search;
-		};
-		BAC6078527CC5F0400DC243E /* Detail */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BAC6078427CC5F0400DC243E /* XCRemoteSwiftPackageReference "Detail" */;
-			productName = Detail;
 		};
 		BADDF9F127C79506000964C6 /* Common */ = {
 			isa = XCSwiftPackageProductDependency;
